@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper ||</title>
+    <link rel="stylesheet" href="color2.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>Color Flipper ||</h2>
+      <ul>
+        <li><a href="SIMPLE/index.html">Simple</a></li>
+        <li>Hex</li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="typer"></h1>
+      <div class="container">
+        <div class="color">
+          BackgroundColorCode: <span class="colorName">#ffffff</span>
+        </div>
+        <div class="flipper">
+          <button class="btn btn-hero">Click Me</button>
+        </div>
+      </div>
+    </main>
+    <script src="color2.js"></script>
+    <script src="typed.js"></script>
+    <script>
+      // Can also be included with a regular script tag
+      import Typed from "typed.js";
+
+      var options = {
+        strings: ['This is a Color flipper','An Js Project','And This Is My','First Beginner Js Project'],
+        typeSpeed: 40,
+        backSpeed:50,
+        loop:true
+      };
+
+      var typed = new Typed(".typer", options);
+    </script>
+  </body>
+</html>
